@@ -17,20 +17,19 @@ public class SistemaRecuros {
                 String codigoTemp = JOptionPane.showInputDialog(null, "Digite o codigo: ");
                 
                 Engenheiro e = new Engenheiro(departamentoTemp, creaTemp, nomeTemp, codigoTemp,salarioTemp);
-                
                 JOptionPane.showMessageDialog(null,"REGISTRO DO ENGENHEIRO COMPLETO: \n\nNome: "+ e.getNome()+"\nCodigo: "+e.getCodigo()+"\nSalario: "+e.getSalarioEngenheiro()+"\nDepartamento: "+e.getDepartamento()+"\ncrea: "+e.getCrea());
        
-        case 2:
-            nomeTemp = JOptionPane.showInputDialog(null, "Digite o nome do Gerente: ");
-            salarioTemp = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o salario base: "));
-            codigoTemp = JOptionPane.showInputDialog(null, "Digite o codigo do Gerente: ");
-            String areaTemp = JOptionPane.showInputDialog(null, "Digite a area do Gerente: ");
-            double bonusTemp = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor do Bonus: "));
+            case 2:
+                nomeTemp = JOptionPane.showInputDialog(null, "Digite o nome do Gerente: ");
+                salarioTemp = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o salario base: "));
+                codigoTemp = JOptionPane.showInputDialog(null, "Digite o codigo do Gerente: ");
+                String areaTemp = JOptionPane.showInputDialog(null, "Digite a area do Gerente: ");
+                double bonusTemp = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor do Bonus: "));
             
-            Gerente g = new Gerente(areaTemp,bonusTemp, nomeTemp,codigoTemp,salarioTemp);
-            JOptionPane.showMessageDialog(null,"REGISTRO DO ENGENHEIRO COMPLETO: \n\nNome: "+ g.getNome()+"\nCodigo: "+g.getCodigo()+"\nSalario: "+g.getSalarioGerente());
+                Gerente g = new Gerente(areaTemp,bonusTemp, nomeTemp,codigoTemp,salarioTemp);
+                JOptionPane.showMessageDialog(null,"REGISTRO DO ENGENHEIRO COMPLETO: \n\nNome: "+ g.getNome()+"\nCodigo: "+g.getCodigo()+"\nSalario: "+g.getSalarioGerente());
             }
-    }
+         }
 
   
 }
